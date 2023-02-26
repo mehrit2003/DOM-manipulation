@@ -57,3 +57,13 @@ function alertFunction(){
 }
 btn.onclick = alertFunction;
 
+
+
+btn.addEventListener('click', function (e) {
+    console.log(e);
+  });
+ // change btn syle.property on click eventListener
+  btn.addEventListener('click', function (e) {
+    e.target.style.background = 'skyblue';
+  });
+
