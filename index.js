@@ -42,10 +42,18 @@ firstDiv.appendChild(nestedPara);
 //append firstDiv to body
 body.appendChild(firstDiv);
 
+
+/*Button alert */
+
 const btn = document.createElement("button");
 btn.textContent = "Click Me!";
 firstDiv.appendChild(btn);
 
-btn.onclick = () =>alert("Hello World")
+//btn.onclick = () =>alert("Hello World")
 
+function alertFunction(){
+    alert("Yay, You did it from a function");
+
+}
+btn.onclick = alertFunction;
 
