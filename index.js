@@ -42,4 +42,10 @@ firstDiv.appendChild(nestedPara);
 //append firstDiv to body
 body.appendChild(firstDiv);
 
+const btn = document.createElement("button");
+btn.textContent = "Click Me!";
+firstDiv.appendChild(btn);
+
+btn.onclick = () =>alert("Hello World")
+
 
