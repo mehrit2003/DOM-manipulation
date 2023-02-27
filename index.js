@@ -88,5 +88,17 @@ for(let i = 0; i < 4; i++){
   container.appendChild(childButton);
 }
 
+//AddEventListener to the childButtons
+const buttons = document.querySelectorAll('button'); //getting the buttons node list
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
+
 
 
