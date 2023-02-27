@@ -65,5 +65,13 @@ btn.addEventListener('click', function (e) {
  // change btn syle.property on click eventListener
   btn.addEventListener('click', function (e) {
     e.target.style.background = 'skyblue';
+    console.log(e);
   });
+
+
+//Addin buttons container
+const btn_container = document.createElement("div");
+body.appendChild(btn_container);
+btn_container.setAttribute("id", "btn-container"); // set attribute to element: "id", "class"...etc
+
 
