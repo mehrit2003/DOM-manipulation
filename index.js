@@ -69,9 +69,24 @@ btn.addEventListener('click', function (e) {
   });
 
 
-//Addin buttons container
+//Add buttons container
 const btn_container = document.createElement("div");
 body.appendChild(btn_container);
 btn_container.setAttribute("id", "btn-container"); // set attribute to element: "id", "class"...etc
+const container = document.getElementById("btn-container")
+container.style.backgroundColor="lime";
+container.style.height = "200px";
+container.style.padding = "30px";
+//container.style.justifyContent = "space-even";
+
+//add buttons to the container
+
+for(let i = 0; i < 4; i++){
+  let childButton = document.createElement("button");
+  childButton.setAttribute("id", "btn:"+(i+1));
+  childButton.textContent = ("Click me: " + (i +1));
+  container.appendChild(childButton);
+}
+
 
 
